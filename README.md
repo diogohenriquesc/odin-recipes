@@ -1,1 +1,3 @@
-# odin-recipes
+# Odin Recipes
+
+This project is a Recipes Website, and once completed it will demonstrate my abilities on HTML, Git and etc...
