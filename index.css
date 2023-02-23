@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:wght@400;700&display=swap');
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  max-width: 40.625rem;
+  margin-inline: auto;
+  padding: 0 1rem;
+}
+
+.title {
+  font-family: 'Poiret One', serif;
+  color: white;
+  font-size: 4rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.recipes__list {
+  margin-top: 2rem;
+  color: white;
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+.recipes__item + .recipes__item {
+  margin-top: .8rem;
+}
+
+.recipes__item a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: all 200ms ease-in-out;
+}
+
+.recipes__item a:hover {
+  color: crimson;
+}
+
+.recipes__item a::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  background-color: crimson;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 200ms ease-in-out;
+}
+
+.recipes__item a:hover::after {
+  width: 100%;
+}
+
